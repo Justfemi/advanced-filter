@@ -37,6 +37,28 @@ document.querySelector('#search__box').oninput = () => {
     } else {
       img.style.display = 'none';
     }
-  })
-}
+  });
+};
+
+let categoryBtn = document.querySelectorAll('.category .btn');
+
+categoryBtn.forEach(btn => {
+  btn.onclick = () => {
+    categoryBtn.forEach(remove => remove.classList.remove('active'));
+    dataCategory = btn.getAttribute('data-category');
+    images.forEach(img => {
+      let dataCat = img.getAttribute('data-cat');
+      if(dataCategory == 'all'){
+        img.style.display = 'inline-block';
+      } else if (dataCategory == dataCat) {
+        img.style.display = 'inline-block';
+      } else {
+        img.style.display =  'none'
+      }
+    })
+    btn.classList.add('active');
+  }
+})
+
+
 

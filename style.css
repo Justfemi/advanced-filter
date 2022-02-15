@@ -184,6 +184,12 @@
   }
 }
 
+@media screen and (max-width: 768px){
+  .popup__image img {
+    width: 100%;
+  }
+} 
+
 @media screen and (max-width: 450px) {
 
   #side__menu.fa-times {

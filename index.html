@@ -9,6 +9,63 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+   <div class="side__bar">
+    <h1 class="heading">filter images</h1>
+
+    <div class="box">
+      <h3 class="title">search images :</h3>
+      <input type="text" placeholder="search image..." id="search__box">
+    </div>
+
+    <div class="box">
+      <h3 class="title">category:</h3>
+      <div class="category">
+        <div class="btn active" data-category="all">all</div>
+        <div class="btn" data-category="animal">animal</div>
+        <div class="btn" data-category="food">food</div>
+        <div class="btn" data-category="fish">fish</div>
+        <div class="btn" data-category="flower">flower</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3 class="title">type:</h3>
+      <div class="category">
+        <div class="btn active" data-type="all">all type</div>
+        <div class="btn" data-type="jpg">jpg</div>
+        <div class="btn" data-type="svg">svg</div>
+        <div class="btn" data-type="png">png</div>
+      </div>
+    </div>
+   </div>
+
+  <div class="gallery">
+    <h1 class="heading">image gallery</h1> 
+
+    <div class="image__container">
+      <img src="./images/img-1.jpg" data-cat="animal" data-search="bird animal chiicken cute">
+      <img src="./images/img-2.svg" data-cat="food" data-search="food vector cookie">
+      <img src="./images/img-3.png" data-cat="food" data-search="food corn cartoon">
+      <img src="./images/img-4.jpg" data-cat="fish " data-search="animal fish dolphin ">
+      <img src="./images/img-5.jpg" data-cat="animal" data-search="animal squirrel cute">
+      <img src="./images/img-6.png" data-cat="animal" data-search="animal panda png cartoon">
+      <img src="./images/img-7.svg" data-cat="animal" data-search="animal penguine bird">
+      <img src="./images/img-8.jpg" data-cat="animal" data-search="bird animal cute">
+      <img src="./images/img-9.png" data-cat="animal" data-search="animal cat mouse png cute">
+      <img src="./images/img-10.svg" data-cat="fish" data-search="animal fish shark vector">
+      <img src="./images/img-11.jpg" data-cat="food" data-search="food orange fruit">
+      <img src="./images/img-12.svg" data-cat="food" data-search="food juice drink vector">
+      <img src="./images/img-13.png" data-cat="food" data-search="food chicken cartoon png">
+      <img src="./images/img-14.jpg" data-cat="food" data-search="food coffee bread">
+      <img src="./images/img-15.png" data-cat="food" data-search="food burger png cartoon">
+      <img src="./images/img-16.svg" data-cat="food" data-search="food popcorn vector">
+      <img src="./images/img-17.jpg" data-cat="food" data-search="food pancake breakfast">
+      <img src="./images/img-18.svg" data-cat="flower" data-search="flower plants vector">
+      <img src="./images/img-19.png" data-cat="flower" data-search="flower plants cartoon">
+      <img src="./images/img-20.jpg" data-cat="flower" data-search="flower plants nature">
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>

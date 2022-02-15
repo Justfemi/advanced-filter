@@ -136,6 +136,28 @@
   display: none;
 }
 
+.popup__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  background-color: var(--dark-bg);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.popup__image img {
+  width: 500px;
+  object-fit: contain;
+  background-color: var(--white);
+  border: 10px solid var(--white);
+  cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 990px){

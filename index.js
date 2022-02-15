@@ -55,10 +55,30 @@ categoryBtn.forEach(btn => {
       } else {
         img.style.display =  'none'
       }
-    })
+    });
     btn.classList.add('active');
   }
-})
+});
+
+let typeBtn = document.querySelectorAll('.type .btn');
+
+typeBtn.forEach(btn => {
+  btn.onclick = () => {
+    typeBtn.forEach(remove => remove.classList.remove('active'));
+    dataType = btn.getAttribute('data-type');
+    images.forEach(img => {
+      let imgType = img.getAttribute('src').split('.').pop();
+      if(dataType == 'all'){
+        img.style.display = 'inline-block';
+      } else if (dataType == imgType) {
+        img.style.display = 'inline-block';
+      } else {
+        img.style.display =  'none'
+      }
+    });
+    btn.classList.add('active');
+  }
+});
 
 
 

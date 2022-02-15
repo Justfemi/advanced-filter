@@ -143,11 +143,33 @@
     display: inline-block;
   }
 
+  #side__menu.fa-times {
+    left: 345px;
+    top: 0;
+  }
+
   .side__bar {
     left: -350px;
   }
 
+  .side__bar.active {
+    box-shadow: 0 0 0 100vw var(--dark-bg);
+    left: 0;
+  } 
+
   .gallery {
     padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  #side__menu.fa-times {
+    left: 10px;
+    top: 20px;
+  }
+
+  .side__bar.active {
+    padding-top: 50px;
   }
 }

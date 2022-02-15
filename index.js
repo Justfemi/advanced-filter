@@ -27,4 +27,16 @@ images.forEach (img => {
   }
 });
 
+// let search = document.querySelector('#search__box');
+document.querySelector('#search__box').oninput = () => {
+  let value = document.querySelector('#search__box').value.toLowerCase();
+  images.forEach(img => {
+    let dataSearch = img.getAttribute('data-search').toLowerCase();
+    if(dataSearch.indexOf(value) > -1){
+      img.style.display = 'inline-block';
+    } else {
+      img.style.display = 'none';
+    }
+  })
+}
 
